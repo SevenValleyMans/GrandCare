@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>행복 돌봄 서비스 - 대구 노인 맞춤 케어</title>
+    
+        <meta name="naver-site-verification" content="caac5bd6eee085a35f5700b95ba49576900ac486">
+        <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="대구에서 시행하는 행복 돌봄 서비스. 방문 마사지와 배달 서비스를 통해 노인 맞춤 돌봄을 제공하여 중년층의 부담을 덜어드립니다.">
+        <meta name="keywords" content="노인 돌봄, 대구, 방문 마사지, 배달 서비스, 행복 돌봄, 맞춤 케어">
+        
+        <meta property="og:title" content="행복 돌봄 서비스 - 대구 노인 맞춤 케어">
+        <meta property="og:description" content="대구에서 시행하는 행복 돌봄 서비스. 방문 마사지와 배달 서비스를 통해 안전하고 따뜻한 노인 돌봄을 제공합니다.">
+        <meta property="og:url" content="https://happycare.daegu.example.com/">
+        <meta property="og:image" content="https://happycare.daegu.example.com/logo.png">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="행복 돌봄 서비스">
+    
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="행복 돌봄 서비스 - 대구 노인 맞춤 케어">
+        <meta name="twitter:description" content="대구에서 시행하는 행복 돌봄 서비스. 방문 마사지와 배달 서비스를 통해 노인 맞춤 돌봄을 제공합니다.">
+        <meta name="twitter:image" content="https://happycare.daegu.example.com/logo.png">
+    
+        <link rel="canonical" href="https://happycare.daegu.example.com/">
+        <link rel="icon" type="image/png" href="logo.png">
+ 
+
+        <style>
+            html, body {
+                margin: 0;
+                overflow-x: hidden;
+                height: 100%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            main {
+                flex: 1;
+            }
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 20px;
+                background-color: #1E1E1E;
+            }
+            .header-left {
+                display: flex;
+                align-items: center;
+            }
+            .header-left .logo {
+                margin-right: 5px;
+            }
+            .nav-links {
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
+            .nav-links a {
+                margin: 0 10px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: white;
+            }
+            .spacer {
+                flex-grow: 1;
+            }
+            .googleLogin {
+                margin-left: 20px;
+            }
+            .logo {
+                height: 80px;
+                width: 80px;
+            }
+            .text {
+                height: 80px;
+                width: 160px;        
+            }
+            header {
+                background-color: #dedac0;
+            }
+            .button {
+                text-decoration: none; 
+                color: white; 
+                background-color: #5b4e4e; 
+                padding: 10px 20px; 
+                border-radius: 5px; 
+                font-size: 16px;
+                transition: font-size 0.3s ease, background-color 0.3s ease;
+            }
+            .button:hover,
+            .nav-links a:hover {
+                background-color: #1E1E1E; 
+                color: white;
+                font-size: 20px;
+            }
+            /* 포커스 시 outline 표시 */
+            .nav-links a:focus,
+            .button:focus {
+                outline: 2px solid #63726e;
+                outline-offset: 2px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                margin: 0;
+                color: #1E1E1E;
+            }
+            p {
+                text-align: center;
+                font-size: 20px; 
+                color: #1E1E1E;
+            }
+            .part1 {
+                background: url(grandma.jpg);
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                width: 100%; 
+                height: 550px; 
+                position: relative; 
+            }
+            .pyt {
+                font-size: 4em;
+                font-family: sans-serif;
+                width: 350px;
+                color: rgb(172, 154, 154);
+                position: relative;
+                left: 50px;
+                bottom: -250px;
+                animation: slide 2s ease-out;
+            }
+            .slogan {
+                color: white;
+                position: relative;
+                left: 50px;
+                bottom: -250px;
+                animation: slide 2s ease-out;
+            }
+            @keyframes slide {
+                from {
+                    left: -50px;
+                    opacity: 0;
+                }
+                to {
+                    left: 50px;
+                    opacity: 1;
+                }
+            }
+            .pyf {
+                font-size: 4em;
+                font-family: sans-serif;
+                width: 350px;
+                color: white;
+                position: absolute;
+                right: 50px;
+                bottom: 80px;
+                animation: slide2 2s;
+                text-align: start;
+            }
+            .contents1 {
+                color: white;
+                position: absolute;
+                right: 50px;
+                bottom: 50px;
+                width: 250px;
+                text-align: start;
+                animation: slide2 2s;
+            }
+            .contents2 {
+                color: white;
+                position: absolute;
+                right: 50px;
+                bottom: 30px;
+                width: 250px;
+                text-align: start;
+                animation: slide2 2s;
+            }
+            @keyframes slide2 {
+                from {
+                    right: -50px;
+                    opacity: 0;
+                }
+                to {
+                    right: 50px;
+                    opacity: 1;
+                }
+            }
+            .services-section {
+                padding: 50px 20px;
+                background-color: #f7f7f7;
+                text-align: center;
+            }
+            .services-title {
+                font-size: 32px;
+                margin-bottom: 30px;
+                color: #1E1E1E;
+            }
+            .services-container {
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                flex-wrap: nowrap;
+                gap: 20px;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .service-card {
+                flex: 1;
+                background-color: white;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                text-align: center;
+                transition: transform 0.4s ease, box-shadow 0.4s ease;
+            }
+            .service-card:hover {
+                transform: scale(1.1);
+                box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            }
+            .service-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+            .service-card h3 {
+                margin: 15px 0 10px;
+                color: #1E1E1E;
+            }
+            .service-card p {
+                color: #333;
+                line-height: 1.4em;
+            }
+            .howitworks-section {
+                padding: 50px 20px;
+                background-color: #FFF;
+                text-align: center;
+            }
+            .howitworks-title {
+                font-size: 32px;
+                margin-bottom: 30px;
+                color: #1E1E1E;
+            }
+            .steps-container {
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                flex-wrap: nowrap;
+                gap: 20px;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .step-box {
+                flex: 1;
+                background-color: #f7f7f7;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+            .step-box h4 {
+                font-size: 24px;
+                margin-bottom: 15px;
+                color: #1E1E1E;
+            }
+            .step-box p {
+                color: #333;
+                line-height: 1.4em;
+            }
+            .cta-section {
+                padding: 50px 20px;
+                background-color: #1E1E1E;
+                text-align: center;
+                color: white;
+            }
+            .cta-section h2 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+            .cta-section p {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            .cta-button {
+                text-decoration: none;
+                color: #1E1E1E;
+                background-color: #fff;
+                padding: 15px 30px;
+                border-radius: 5px;
+                font-size: 18px;
+                transition: background-color 0.3s ease;
+            }
+            .cta-button:hover {
+                background-color: #ccc;
+            }
+            @media (max-width: 768px) {
+                header {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px;
+                }
+                .header-left {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .header-left .logo {
+                    margin-right: 0;
+                    margin-bottom: 5px;
+                    height: 60px;
+                    width: 60px;
+                }
+                .header-left .text {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                    height: 60px;
+                    width: 130px;
+                }
+                .nav-links {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .nav-links a {
+                    margin: 5px;
+                    padding: 8px 12px;
+                    font-size: 14px;
+                }
+                .googleLogin img {
+                    width: 150px;
+                }
+                .spacer {
+                    display: none;
+                }
+                .pyt {
+                    position: static !important; 
+                    left: auto !important;
+                    bottom: auto !important;
+                    width: auto !important;
+                    margin: 20px 0 10px !important;
+                    text-align: center !important;
+                    font-size: 2.5em !important; 
+                }
+                .pyf {
+                    position: static !important; 
+                    right: auto !important;
+                    bottom: auto !important;
+                    width: auto !important;
+                    margin: 20px 0 !important;
+                    text-align: center !important;
+                    font-size: 2.5em !important; 
+                }
+                .part1 {
+                    height: 400px !important;
+                }
+                .services-container, .steps-container {
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .service-card, .step-box {
+                    max-width: 90% !important;
+                }
+            }
+
+            #blog-feed {
+                padding: 30px 20px; 
+                background-color: #fafafa; 
+            }
+            #blog-feed h2 {
+                font-size: 28px; 
+                color: #333; 
+                text-align: center; 
+                margin-bottom: 20px;
+            }
+            #feed-content ul {
+                max-width: 800px;
+                margin: 0 auto; 
+                list-style: none; 
+                padding: 0;
+            }
+            #feed-content li {
+                margin: 15px 0;
+                padding: 15px 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            #feed-content li h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                color: #1E1E1E;
+            }
+            #feed-content li p {
+                font-size: 16px;
+                color: #555;
+                line-height: 1.5em;
+            }
+            #feed-content li:hover {
+                background-color: #f2f2f2;
+            }
+
+            /* ========== [브랜딩/컬러/애니메이션/푸터 & 메뉴 강조] ========== */
+            :root {
+                --brand-color: white;
+            }
+            h1 strong {
+                color: var(--brand-color);
+            }
+            .pyt, .pyf {
+                color: var(--brand-color)!important;
+            }
+            .nav-links a.active {
+                color: var(--brand-color)!important;
+                border-bottom: 2px solid var(--brand-color);
+                padding-bottom: 3px;
+            }
+            .footer-content {
+                text-align: center;
+                padding: 20px;
+            }
+            .footer-intro {
+                margin-top: 10px;
+                font-size: 14px;
+                color: #555;
+            }
+            .footer-email, .footer-hours {
+                color: #555;
+                margin: 5px 0;
+            }
+            .contact-info {
+                font-size: 18px;
+                font-weight: bold;
+                color: #1E1E1E;
+                text-decoration: none;
+                padding-right: 20px;
+            }
+
+            .contact-info a {
+                text-decoration: none;
+                color: #5b4e4e;
+                transition: color 0.3s ease;
+            }
+
+            .contact-info a:hover {
+                color: #1E1E1E;
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- 스크린 리더 사용자들이 바로 본문으로 이동할 수 있는 Skip 링크(선택) -->
+        <a href="#mainContent" style="position: absolute; left: -9999px; top: auto;">Skip to main content</a>
+
+        <header>
+            <div class="header-left">
+                <img class="logo" src="logo.png" alt="행복 돌봄 서비스 로고" loading="lazy">
+                <img class="text" src="text.png" alt="행복 돌봄 텍스트 로고" loading="lazy">
+                <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+                    <a href="index.html" class="button active">홈</a>
+                    <a href="about.html" class="button">서비스 소개</a>
+                    <a href="contents.html" class="button">컨텐츠</a>
+                    <a href="reservation.html" class="button">예약 및 상담</a>
+                    <a href="reviews.html" class="button">이용 후기</a>
+                    <a href="contact.html" class="button">문의하기</a>
+                </nav>
+            </div>
+            <div class="spacer"></div>
+            
+            <!-- 전화번호 추가 -->
+            <div class="contact-info">
+                <a href="tel:01066204504">📞 010-6620-4504</a>
+            </div>
+        </header>
+        
+          
+        <main id="mainContent">
+            <!-- 메인 배너 -->
+            <section class="part1 fade-in-up">
+                <div class="pyt">안심 케어, 따뜻한 돌봄</div>
+                <div class="slogan">전문 마사지사의 정기 방문과</div>
+                <div class="slogan">필수 물품 배달로 노인 맞춤 서비스를 제공합니다.</div>
+                <div class="pyf">신뢰와 정성</div>
+                <div class="contents1">대구 지역의 노인들을 위한</div>
+                <div class="contents2">맞춤형 돌봄 서비스</div>
+            </section>  
+
+            <!-- 서비스 소개 -->
+            <section class="services-section fade-in-up">
+                <h2 class="services-title">우리의 서비스</h2>
+                <div class="services-container">
+                    <div class="service-card">
+                        <img src="first.jpg" alt="방문 마사지 서비스 이미지" loading="lazy">
+                        <h3>방문 마사지</h3>
+                        <p>전문 마사지사가 대구 내 노인 가정을 방문하여 맞춤형 마사지와 건강 체크를 진행합니다.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="second.jpg" alt="배달 서비스 이미지" loading="lazy">
+                        <h3>배달 서비스</h3>
+                        <p>식사, 약품 등 필수 물품을 정기적으로 배송하며, 긴급 상황 시 신속 배달 체계를 마련합니다.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="third.jpg" alt="예약 및 상담 이미지" loading="lazy">
+                        <h3>예약 및 상담</h3>
+                        <p>전화 및 온라인 예약 시스템을 통해 고객님의 필요를 파악하고, 초기 방문 시 건강 상태 점검과 맞춤형 돌봄 계획을 수립합니다.</p>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- 서비스 이용 방법 -->
+            <section class="howitworks-section fade-in-up">
+                <h2 class="howitworks-title">서비스 이용 방법</h2>
+                <div class="steps-container">
+                    <div class="step-box">
+                        <h4>1. 예약 접수 및 상담</h4>
+                        <p>전화나 온라인 예약 시스템을 통해 상담 및 예약을 진행합니다.</p>
+                    </div>
+                    <div class="step-box">
+                        <h4>2. 초기 방문 및 건강 체크</h4>
+                        <p>첫 방문 시 상담과 건강 상태 점검을 통해 맞춤형 돌봄 계획을 수립합니다.</p>
+                    </div>
+                    <div class="step-box">
+                        <h4>3. 정기 서비스 제공</h4>
+                        <p>방문 마사지와 배달 서비스를 정해진 스케줄에 따라 지속적으로 제공합니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="cta-section fade-in-up">
+                <h2>지금 바로 예약 및 상담 신청하세요!</h2>
+                <p>대구 지역의 노인과 중년층 모두를 위한 따뜻한 돌봄, 지금 문의하세요.</p>
+                <a href="mailto:happycare@daegu.go.kr" class="cta-button">이메일 문의하기</a>
+                <a href="https://instagram.com/happycare_daegu" 
+                   class="cta-button" 
+                   style="margin-left: 10px;" 
+                   target="_blank">
+                   @happycare_daegu
+                </a>
+            </section>
+        </main>
+
+        <!-- 블로그 최신 포스트 -->
+        <section id="blog-feed" class="fade-in-up">
+            <h2>최신 블로그 포스트</h2>
+            <div id="feed-content">로딩 중...</div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 행복 돌봄 서비스. All Rights Reserved.</p>
+                <div class="footer-intro">대구 지역 노인 맞춤 돌봄 서비스 – 방문 마사지와 배달 서비스를 통해 가족의 부담을 덜어드립니다.</div>
+                <div class="footer-email">이메일: happycare@daegu.go.kr</div>
+                <div class="footer-hours">상담 가능 시간: 평일 09:00 ~ 18:00</div>
+                <div class="footer-instagram">인스타그램: @happycare_daegu</div>
+            </div>  
+            <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "LocalBusiness",
+                  "name": "행복 돌봄 서비스",
+                  "image": "https://happycare.daegu.example.com/logo.png",
+                  "url": "https://happycare.daegu.example.com/",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "대구",
+                    "addressRegion": "대구광역시",
+                    "addressCountry": "KR"
+                  },
+                  "description": "대구에서 시행하는 행복 돌봄 서비스. 방문 마사지와 배달 서비스를 통해 노인 맞춤 돌봄을 제공하여 중년층의 부담을 덜어드립니다.",
+                  "openingHours": ["Mo-Fr 09:00-18:00"]
+                }
+            </script>
+        </footer> 
+
+        <!-- 스크롤 맨 위로 이동 버튼 -->
+        <button id="scrollToTopBtn" title="맨 위로 이동">▲</button>
+
+        <!-- RSS 스크립트 -->
+        <script>
+            const feedUrl = 'https://rss.blog.naver.com/dlrkdgml3737.xml';
+            const proxyUrl = 'https://api.allorigins.win/get?url=';
+
+            fetch(proxyUrl + encodeURIComponent(feedUrl))
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const parser = new DOMParser();
+                    const xmlDoc = parser.parseFromString(data.contents, "text/xml");
+                    const items = xmlDoc.querySelectorAll("item");
+                    
+                    let output = "<ul>";
+                    items.forEach((item, index) => {
+                        if(index < 3) {
+                            const title = item.querySelector("title")?.textContent || "";
+                            const link = item.querySelector("link")?.textContent || "#";
+                            const description = item.querySelector("description")?.textContent || "";
+                            let tempEl = document.createElement("div");
+                            tempEl.innerHTML = description;
+                            let plainDesc = tempEl.textContent || tempEl.innerText || "";
+                            const snippet = plainDesc.length > 80 
+                                ? plainDesc.slice(0, 80) + "..."
+                                : plainDesc;
+                            output += `
+                                <li>
+                                    <h3>
+                                        <a href="${link}" target="_blank" style="text-decoration:none; color:#1E1E1E;">
+                                           ${title}
+                                        </a>
+                                    </h3>
+                                    <p>${snippet}</p>
+                                </li>
+                            `;
+                        }
+                    });
+                    output += "</ul>";
+                    document.getElementById("feed-content").innerHTML = output;
+                })
+                .catch(error => {
+                    console.error("RSS 피드 불러오기 에러:", error);
+                    document.getElementById("feed-content").textContent = "블로그 피드를 불러오는 데 실패했습니다.";
+                });
+        </script>
+
+        <!-- Firebase 구글 로그인 -->
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+            import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+        
+            const firebaseConfig = {
+                apiKey: "AIzaSyDDv6vVR1NHSgl8ZWHBZDqYqdWDHfX8KHM",
+                authDomain: "wolf-rent-28e6c.firebaseapp.com",
+                projectId: "wolf-rent-28e6c",
+                storageBucket: "wolf-rent-28e6c.firebasestorage.app",
+                messagingSenderId: "516126424503",
+                appId: "1:516126424503:web:0a08118517990925883c32",
+                measurementId: "G-R8JKZ86N6N"
+            };
+        
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+            const auth = getAuth(app);
+            const provider = new GoogleAuthProvider();
+        
+            document.addEventListener("DOMContentLoaded", () => {
+                const googleLoginBtn = document.getElementById("googleLogin");
+                if (googleLoginBtn) {
+                    googleLoginBtn.addEventListener("click", (event) => {
+                        event.preventDefault();
+                        signInWithPopup(auth, provider)
+                            .then((result) => {
+                                console.log("로그인 성공:", result.user);
+                                googleLoginBtn.style.display = "none";
+                                const userNameElement = document.createElement("span");
+                                userNameElement.textContent = result.user.displayName;
+                                userNameElement.style.fontSize = "20px";
+                                userNameElement.style.color = "#fff";
+                                userNameElement.style.marginLeft = "10px";
+                                const googleLoginContainer = document.querySelector(".googleLogin");
+                                googleLoginContainer.appendChild(userNameElement);
+                            })
+                            .catch((error) => {
+                                console.error("로그인 오류:", error);
+                            });
+                    });
+                } else {
+                    console.error("구글 로그인 버튼을 찾을 수 없습니다.");
+                }
+            });
+        </script>
+
+        <!-- 스크롤 맨 위로 이동 스크립트 -->
+        <script>
+            // 스크롤 감지하여 버튼 표시/숨김
+            window.onscroll = function() { scrollFunction(); };
+
+            function scrollFunction() {
+                const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+                // 20px 이상 스크롤 시 버튼 표시
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopBtn.style.display = "block";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            }
+
+            // 버튼 클릭 시 맨 위로 이동
+            document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        </script>
+    </body>
+</html>

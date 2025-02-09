@@ -2,18 +2,30 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <!-- 메타 태그: 제목과 설명에 키워드 추가 -->
-  <title>서비스 소개 | 노인 돌봄 서비스</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 모바일 최적화를 위한 필수 메타 태그 -->
-  <meta name="description" content="남친대행 렌탈남친 데이트대행 역할대행 하객대행까지! Wolf Rent는 맞춤형 남친대행 서비스를 제공합니다. 남친대행, 렌탈남친 서비스를 제공하는 울프렌트의 비전, 미션, 서비스 철학을 확인하세요.">
+  <title>노인돌봄서비스 돌봄 서비스 | 행복돌봄서비스</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 가족이 멀리 있거나 바쁜 분들을 위한 안심 케어 서비스 -->
+  <meta name="description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta name="keywords" content="노인돌봄서비스, 돌봄 서비스, 노인맞춤돌봄서비스, 노인복지, 노인, 안심 케어, 가족 돌봄, 방문 마사지, 배달 서비스, 맞춤 케어, 행복 돌봄">
+      
+  <meta property="og:title" content="행복 돌봄 서비스 - 사랑하는 가족을 위한 안심 케어">
+  <meta property="og:description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta property="og:url" content="https://happycare.daegu.example.com/">
+  <meta property="og:image" content="https://happycare.daegu.example.com/logo.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="행복 돌봄 서비스">
+      
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="행복 돌봄 서비스 - 사랑하는 가족을 위한 안심 케어">
+  <meta name="twitter:description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta name="twitter:image" content="https://happycare.daegu.example.com/logo.webp">
+      
+  <link rel="canonical" href="https://happycare.daegu.example.com/">
   <link rel="icon" type="image/webp" href="logo.webp">
-
-  <!-- [중요] Firebase 스크립트 제거하고, header.js만 import -->
-  <script type="module" src="header.js"></script>
 
   <style>
     :root {
-      --brand-color: #ffffff; 
+      --brand-color: #ffffff;
     }
     * {
       box-sizing: border-box;
@@ -24,32 +36,27 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       background-color: #fff;
       color: #333;
-      line-height: 1.6;
-      /* 스크롤 시 부드럽게 */
       scroll-behavior: smooth;
     }
-
-    /* 상단 헤더 (index.html과 동일) */
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 10px 20px;
-      background-color:#dedac0; 
+      background-color: #dedac0;
     }
     .header-left {
       display: flex;
       align-items: center;
     }
-    /* 이미지 alt 속성 수정 */
     .logo {
       height: 80px;
       width: 80px;
-      margin-right: 5px; 
+      margin-right: 5px;
     }
     .text {
       height: 80px;
-      width: 160px; 
+      width: 160px;
     }
     .nav-links {
       display: flex;
@@ -70,6 +77,11 @@
     .nav-links a:hover {
       font-size: 20px;
     }
+    .nav-links a.active {
+      color: var(--brand-color)!important;
+      border-bottom: 2px solid var(--brand-color);
+      padding-bottom: 3px;
+    }
     .spacer {
       flex-grow: 1;
     }
@@ -80,25 +92,12 @@
       width: 200px;
       cursor: pointer;
     }
-    /* 현재 페이지 a.active */
-    .nav-links a.active {
-      color: var(--brand-color)!important;
-      border-bottom: 2px solid var(--brand-color);
-      padding-bottom: 3px;
-    }
-
     .about-hero {
-      height: 450px;
       position: relative;
+      height: 450px;
       padding: 275px 20px;
       text-align: center;
       color: ivory;
-    }
-    .about-hero h1,
-    .about-hero p,
-    .home-button {
-      position: relative;
-      z-index: 2;
     }
     .about-hero h1 {
       position: absolute;
@@ -117,17 +116,9 @@
       animation: slide 2s;
     }
     @keyframes slide {
-      from {
-        left: -70px;
-        opacity: 0;
-      }
-      to {
-        left: 80px;
-        opacity: 1;
-      }
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
     }
-
-    /* 메인 컨텐츠 영역 */
     .container {
       max-width: 1200px;
       margin: 40px auto;
@@ -142,18 +133,16 @@
       font-size: 2em;
       margin-bottom: 20px;
       color: #1E1E1E;
-      text-align: center;
     }
     .section p {
       font-size: 1.1em;
-      text-align: center;
       margin-bottom: 20px;
+      text-align: center;
     }
     .mission, .about, .services {
       background: ivory;
       padding: 40px 20px;
       border-radius: 8px;
-      /* [추가] 스크롤 애니메이션 초기 설정 */
       opacity: 0;
       transform: translateY(40px);
     }
@@ -167,27 +156,13 @@
       margin-bottom: 10px;
       padding-left: 10px;
     }
-    @keyframes rotate-center {
-      0% { transform: rotate(0); }
-      100% { transform: rotate(360deg); }
-    }
-    .rotate-center {
-      position: absolute;
-      right: 0px;
-      bottom: 0px;
-      animation: rotate-center .6s ease-in-out both;
-    }
-
-    /* ===============================
-       [새 섹션] 팀 소개(Team Section)
-       카드 형태 + fade-in-up
-    ================================ */
+    /* 팀 소개 섹션 (옵션) */
     .team {
       background: #f5f5f5;
       padding: 40px 20px;
       border-radius: 8px;
       margin-bottom: 40px;
-      opacity: 0; /* 스크롤 페이드인 초기 */
+      opacity: 0;
       transform: translateY(40px);
     }
     .team-grid {
@@ -227,172 +202,96 @@
       font-size: 0.9em;
       color: #666;
     }
-
-    /* 스크롤 페이드인 keyframes */
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-
-    /* =============================================
-       모바일 최적화를 위한 미디어 쿼리
-       (768px 이하 화면일 때 적용)
-    ============================================= */
     @media (max-width: 768px) {
-      /* 헤더 구조 조정 */
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .header-left {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      /* 로고 크기 축소 */
-      .header-left .logo,
-      .header-left .text {
-        width: 60px;
-        height: 60px;
-      }
-      /* 내비게이션 링크 크기/여백 조정 */
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-      }
-      .nav-links a {
-        margin: 5px;
-        font-size: 14px;
-        padding: 8px 12px;
-      }
-
-      /* about-hero 영역 */
-      .about-hero {
-        height: auto;
-        padding: 40px 20px;
-      }
-      .about-hero h1 {
-        position: static;
-        font-size: 2em;
-        margin: 20px 0 10px 0;
-        left: auto;
-        top: auto;
-      }
-      .about-hero p {
-        position: static;
-        font-size: 1em;
-        margin: 10px 0 20px 0;
-        left: auto;
-        top: auto;
-      }
-      /* 회전 로고 숨김 또는 크기 축소 */
-      .rotate-center {
-        display: none;
-      }
-
-      /* 섹션 글자 크기 조정 */
-      .section h2 {
-        font-size: 1.5em;
-      }
-      .section p {
-        font-size: 1em;
-      }
+      header { flex-direction: column; align-items: center; }
+      .header-left { flex-direction: column; align-items: center; }
+      .header-left .logo, .header-left .text { width: 60px; height: 60px; }
+      .nav-links { flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+      .nav-links a { margin: 5px; font-size: 14px; padding: 8px 12px; }
+      .about-hero { height: auto; padding: 40px 20px; }
+      .about-hero h1, .about-hero p { position: static; font-size: 2em; margin: 20px 0; }
+      .section h2 { font-size: 1.5em; }
+      .section p { font-size: 1em; }
     }
     .background-image {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   </style>
 </head>
 <body>
-  <!-- 상단 헤더 -->
+  <!-- 공통 헤더 (index.html과 동일) -->
   <header>
     <div class="header-left">
-      <!-- 이미지 alt 속성 수정 -->
-      <img class="logo" src="logo.png" alt="울프렌트 로고 – 남친대행·렌탈남친" loading="lazy">
-      <img class="text" src="text.png" alt="울프렌트 텍스트 로고 – 남친대행·렌탈남친" loading="lazy">
+      <img class="logo" src="logo.webp" alt="행복 돌봄 서비스 로고" loading="lazy">
+      <img class="text" src="text.webp" alt="행복 돌봄 텍스트 로고" loading="lazy">
       <nav class="nav-links">
         <a href="index.html" class="button">홈</a>
-        <a href="남친대행.html" class="button active">서비스 소개</a>
+        <a href="about.html" class="button active">서비스 소개</a>
         <a href="contents.html" class="button">컨텐츠</a>
         <a href="faq.html" class="button">자주 묻는 질문</a>
-        <a href="review-form.html" class="button">이용후기</a>
-        <a href="렌탈남친.html" class="button">고민 상담</a>
-
+        <a href="review-form.html" class="button">이용 후기</a>
+        <a href="counseling.html" class="button">문의하기</a>
       </nav>
     </div>
     <div class="contact-info">
-        <a href="tel:01066204504">📞 010-6620-4504</a>
+      <a>📞 010-6620-4504</a>
     </div>
   </header>
 
-  <!-- about-hero (기존 header 부분) -->
+  <!-- about-hero 섹션 -->
   <section class="about-hero">
-    <img src="smile.jpg" alt="데이트 이미지" class="background-image" loading="lazy">
+    <img src="smile.webp" alt="따뜻한 케어 이미지" class="background-image" loading="lazy">
     <h1>행복 돌봄 서비스</h1>
-    <p>대구 노인 맞춤 케어 – 안전하고 따뜻한 돌봄을 제공합니다</p>
-    <!-- 이미지 alt 속성 수정 -->
-    <img src="logo.png" width="100" height="100" alt="울프렌트 로고 – 남친대행·렌탈남친" class="rotate-center" loading="lazy">
+    <p>바쁘거나 멀리 있어도, 사랑하는 가족을 안전하게 케어합니다.</p>
   </section>
-  
+
   <div class="container">
-    <!-- 회사 소개 섹션: 헤딩 구조 보강 -->
+    <!-- 회사 소개 섹션 -->
+    <section class="section about">
+      <h2>회사 소개 – 사랑하는 가족을 위한 안심 케어</h2>
+      <p>
+        행복 돌봄 서비스는 직접 돌보기 어려운 가족을 위해 전문 케어 인력이 방문하여 정성 어린 돌봄을 제공합니다.  
+        여러분의 소중한 가족이 언제나 건강하고 안전할 수 있도록 최선을 다합니다.
+      </p>
+    </section>
     
-      
-      <div class="container">
-        <!-- 회사 소개 섹션 -->
-        <section class="section about">
-          <h2>회사 소개 – 대구 노인 맞춤 돌봄 서비스</h2>
-          <p>
-            행복 돌봄 서비스는 대구 지역의 노인분들께 전문적인 돌봄 서비스를 제공하는 기관입니다.  
-            방문 마사지, 필수 물품 배달, 정기 상담 및 예약 서비스를 통해 노인분들의 안전과 건강,  
-            그리고 가족의 부담을 덜어드리는 것을 목표로 합니다.
-          </p>
-        </section>
-        
-        <!-- 미션 및 비전 섹션 -->
-        <section class="section mission">
-          <h2>미션 &amp; 비전 – 안전과 정성으로 지키는 삶</h2>
-          <p>
-            우리의 미션은 노인분들이 편안하고 안정된 생활을 할 수 있도록 맞춤형 돌봄 서비스를 제공하는 것입니다.  
-            정성 어린 케어와 전문 인력을 통해 가족의 부담을 덜고, 고객 한 분 한 분의 삶의 질을 향상시키고자 합니다.
-          </p>
-        </section>
-        
-        <!-- 서비스 소개 섹션 -->
-        <section class="section services">
-          <h2>서비스 소개 – 대구 노인 맞춤 돌봄의 주요 서비스</h2>
-          <p>행복 돌봄 서비스는 다음과 같은 서비스를 제공합니다.</p>
-          
-          <ul>
-              <li>방문 마사지 및 건강 체크</li>
-              <li>필수 물품 정기 배달</li>
-              <li>상담 및 예약을 통한 맞춤 케어 계획 수립</li>
-          </ul>
-          <p>
-              전문 돌봄 인력이 직접 방문하여 고객의 건강 상태를 점검하고, 필요한 서비스를 제공함으로써  
-              안전하고 따뜻한 돌봄 환경을 조성합니다.
-          </p>
-        </section>  
-      </div>
+    <!-- 미션 및 비전 섹션 -->
+    <section class="section mission">
+      <h2>미션 &amp; 비전 – 믿음과 정성으로 지키는 가족의 행복</h2>
+      <p>
+        우리의 미션은 멀리 있거나 바쁜 일정으로 직접 케어하기 어려운 가족에게 안심과 사랑이 담긴 맞춤형 돌봄 서비스를 제공하는 것입니다.  
+        정성을 다해 가족의 건강과 안전을 지켜드립니다.
+      </p>
+    </section>
     
+    <!-- 서비스 소개 섹션 -->
+    <section class="section services">
+      <h2>서비스 소개 – 가족을 위한 맞춤 케어 서비스</h2>
+      <p>행복 돌봄 서비스가 제공하는 주요 서비스는 다음과 같습니다.</p>
+      <ul>
+        <li>방문 마사지 및 건강 체크</li>
+        <li>필수 물품 정기 배달</li>
+        <li>온라인 예약 및 맞춤 상담</li>
+      </ul>
+      <p>
+        전문 인력이 직접 방문하여 사랑하는 가족의 상태를 꼼꼼히 확인하고, 필요한 케어를 제공함으로써 마음의 안정을 드립니다.
+      </p>
+    </section>
+  </div>
 
-  <!-- [추가] JS: 스크롤 페이드인 애니메이션 -->
   <script>
-    // 관찰 대상: .mission, .about, .services, .team
+    // 스크롤 페이드인 애니메이션 (mission, about, services, team)
     const fadeTargets = document.querySelectorAll('.mission, .about, .services, .team');
-
     const io = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting) {
@@ -400,27 +299,14 @@
           io.unobserve(entry.target);
         }
       });
-    }, {
-      threshold: 0.1
-    });
-
-    fadeTargets.forEach(t => {
-      io.observe(t);
-    });
-
-    // fadeInUp keyframes
-    // 이미 CSS에서 정의한 바가 없으므로 추가
+    }, { threshold: 0.1 });
+    fadeTargets.forEach(t => io.observe(t));
+    
     const styleEl = document.createElement('style');
     styleEl.textContent = `
       @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(40px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
       }
     `;
     document.head.appendChild(styleEl);

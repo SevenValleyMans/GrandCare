@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://happycareservice.netlify.app/sitemap.xml

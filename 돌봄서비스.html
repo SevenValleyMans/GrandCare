@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>이용 후기 | 돌봄 서비스 노인돌봄서비스 - 행복돌봄서비스</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 가족이 멀리 있거나 바쁜 분들을 위한 안심 케어 서비스 -->
+  <meta name="description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta name="keywords" content="노인돌봄서비스, 돌봄 서비스, 노인맞춤돌봄서비스, 노인복지, 노인, 안심 케어, 가족 돌봄, 방문 마사지, 배달 서비스, 맞춤 케어, 행복 돌봄">
+      
+  <meta property="og:title" content="행복 돌봄 서비스 - 사랑하는 가족을 위한 안심 케어">
+  <meta property="og:description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta property="og:url" content="https://happycareservice.netlify.app/돌봄서비스">
+  <meta property="og:image" content="https://happycareservice.netlify.app/logo.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="행복 돌봄 서비스">
+      
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="행복 돌봄 서비스 - 사랑하는 가족을 위한 안심 케어">
+  <meta name="twitter:description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta name="twitter:image" content="https://happycareservice.netlify.app/logo.webp">
+      
+  <link rel="canonical" href="https://happycareservice.netlify.app/돌봄서비스">
+  <link rel="icon" type="image/webp" href="logo.webp">
+
+  <style>
+    :root { --brand-color: #ffffff; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #dedac0;
+      margin: -20px -20px 20px -20px;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 80px;
+      width: 80px;
+      margin-right: 5px;
+    }
+    .text {
+      height: 80px;
+      width: 160px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      background-color: #5b4e4e;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: font-size 0.3s ease;
+    }
+    .nav-links a:hover { font-size: 20px; }
+    .nav-links a.active {
+      color: var(--brand-color)!important;
+      border-bottom: 2px solid var(--brand-color);
+      padding-bottom: 3px;
+    }
+    .spacer { flex-grow: 1; }
+    .contact-info { font-size: 18px; font-weight: bold; color: #1E1E1E; }
+    .review-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .review-header h1 { margin: 0; font-size: 2em; }
+    .reviews-container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .no-reviews {
+      font-size: 1.2em;
+      margin-top: 40px;
+      line-height: 1.5;
+    }
+    .submit-review {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      background-color: #1E1E1E;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+    .submit-review:hover { background-color: #333; }
+    @media (max-width: 768px) {
+      body { padding: 10px; }
+      header {
+        margin: -10px -10px 10px -10px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .review-header {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      .review-header h1 { font-size: 1.6em; }
+      .no-reviews { font-size: 1em; margin-top: 20px; }
+      .submit-review { font-size: 0.9em; padding: 8px 16px; }
+      header { flex-direction: column; align-items: flex-start; }
+      .header-left { flex-direction: column; align-items: flex-start; }
+      .header-left .logo, .header-left .text { width: 60px; height: 60px; }
+      .nav-links { flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+      .nav-links a { margin: 5px; font-size: 14px; padding: 8px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img class="logo" src="logo.webp" alt="행복 돌봄 서비스 로고" loading="lazy">
+      <img class="text" src="text.webp" alt="행복 돌봄 서비스 텍스트 로고" loading="lazy">
+      <nav class="nav-links">
+        <a href="index.html" class="button">홈</a>
+        <a href="노인돌봄서비스.html" class="button">서비스 소개</a>
+        <a href="노인맞춤돌봄서비스.html" class="button">컨텐츠</a>
+        <a href="노인복지.html" class="button">자주 묻는 질문</a>
+        <a href="돌봄서비스.html" class="button active">이용 후기</a>
+        <a href="counseling.html" class="button">문의하기</a>
+      </nav>
+    </div>
+    <div class="spacer"></div>
+    <div class="contact-info"><a>📞 010-6620-4504</a></div>
+  </header>
+
+  <div class="review-header">
+    <h1>이용 후기</h1>
+  </div>
+
+  <div class="reviews-container">
+    <div class="no-reviews">
+      아직 후기가 없습니다.<br>
+      서비스를 이용하신 후 소중한 후기를 남겨주세요.
+    </div>
+    <a href="review-form.html" class="submit-review">리뷰 작성하기</a>
+  </div>
+</body>
+</html>

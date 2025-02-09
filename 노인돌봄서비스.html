@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>노인돌봄서비스 돌봄 서비스 | 행복돌봄서비스</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 가족이 멀리 있거나 바쁜 분들을 위한 안심 케어 서비스 -->
+  <meta name="description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta name="keywords" content="노인돌봄서비스, 돌봄 서비스, 노인맞춤돌봄서비스, 노인복지, 노인, 안심 케어, 가족 돌봄, 방문 마사지, 배달 서비스, 맞춤 케어, 행복 돌봄">
+      
+  <meta property="og:title" content="행복 돌봄 서비스 - 사랑하는 가족을 위한 안심 케어">
+  <meta property="og:description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta property="og:url" content="https://happycareservice.netlify.app/노인돌봄서비스">
+  <meta property="og:image" content="https://happycareservice.netlify.app/logo.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="행복 돌봄 서비스">
+      
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="행복 돌봄 서비스 - 사랑하는 가족을 위한 안심 케어">
+  <meta name="twitter:description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta name="twitter:image" content="https://happycareservice.netlify.app/logo.webp">
+      
+  <link rel="canonical" href="https://happycareservice.netlify.app/노인돌봄서비스">
+  <link rel="icon" type="image/webp" href="logo.webp">
+
+  <style>
+    :root {
+      --brand-color: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #dedac0;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 80px;
+      width: 80px;
+      margin-right: 5px;
+    }
+    .text {
+      height: 80px;
+      width: 160px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .nav-links a {
+      margin: 0 10px;
+      white-space: nowrap;
+      text-decoration: none;
+      color: white;
+      background-color: #5b4e4e;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: font-size 0.3s ease;
+    }
+    .nav-links a:hover {
+      font-size: 20px;
+    }
+    .nav-links a.active {
+      color: var(--brand-color)!important;
+      border-bottom: 2px solid var(--brand-color);
+      padding-bottom: 3px;
+    }
+    .spacer {
+      flex-grow: 1;
+    }
+    .googleLogin {
+      margin-left: 20px;
+    }
+    .googleLogin img {
+      width: 200px;
+      cursor: pointer;
+    }
+    .about-hero {
+      position: relative;
+      height: 450px;
+      padding: 275px 20px;
+      text-align: center;
+      color: ivory;
+    }
+    .about-hero h1 {
+      position: absolute;
+      left: 80px;
+      top: 110px;
+      font-size: 5em;
+      margin-bottom: 10px;
+      animation: slide 2s;
+    }
+    .about-hero p {
+      position: absolute;
+      left: 80px;
+      top: 230px;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      animation: slide 2s;
+    }
+    @keyframes slide {
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section {
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+    }
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #1E1E1E;
+    }
+    .section p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .mission, .about, .services {
+      background: ivory;
+      padding: 40px 20px;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    .section ul {
+      list-style-position: inside;
+      padding-left: 0;
+      text-align: left;
+      display: inline-block;
+    }
+    .section li {
+      margin-bottom: 10px;
+      padding-left: 10px;
+    }
+    /* 팀 소개 섹션 (옵션) */
+    .team {
+      background: #f5f5f5;
+      padding: 40px 20px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .team-member {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+    .team-member img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .team-info {
+      padding: 15px;
+    }
+    .team-info h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #1E1E1E;
+      margin-bottom: 5px;
+    }
+    .team-info p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      color: #666;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      header { flex-direction: column; align-items: center; }
+      .header-left { flex-direction: column; align-items: center; }
+      .header-left .logo, .header-left .text { width: 60px; height: 60px; }
+      .nav-links { flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+      .nav-links a { margin: 5px; font-size: 14px; padding: 8px 12px; }
+      .about-hero { height: auto; padding: 40px 20px; }
+      .about-hero h1, .about-hero p { position: static; font-size: 2em; margin: 20px 0; }
+      .section h2 { font-size: 1.5em; }
+      .section p { font-size: 1em; }
+    }
+    .background-image {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <!-- 공통 헤더 (index.html과 동일) -->
+  <header>
+    <div class="header-left">
+      <img class="logo" src="logo.webp" alt="행복 돌봄 서비스 로고" loading="lazy">
+      <img class="text" src="text.webp" alt="행복 돌봄 텍스트 로고" loading="lazy">
+      <nav class="nav-links">
+        <a href="index.html" class="button">홈</a>
+        <a href="노일돌봄서비스.html" class="button active">서비스 소개</a>
+        <a href="노인맞춤돌봄서비스.html" class="button">컨텐츠</a>
+        <a href="노인복지.html" class="button">자주 묻는 질문</a>
+        <a href="돌봄서비스.html" class="button">이용 후기</a>
+        <a href="counseling.html" class="button">문의하기</a>
+      </nav>
+    </div>
+    <div class="contact-info">
+      <a>📞 010-6620-4504</a>
+    </div>
+  </header>
+
+  <!-- about-hero 섹션 -->
+  <section class="about-hero">
+    <img src="smile.webp" alt="따뜻한 케어 이미지" class="background-image" loading="lazy">
+    <h1>행복 돌봄 서비스</h1>
+    <p>바쁘거나 멀리 있어도, 사랑하는 가족을 안전하게 케어합니다.</p>
+  </section>
+
+  <div class="container">
+    <!-- 회사 소개 섹션 -->
+    <section class="section about">
+      <h2>회사 소개 – 사랑하는 가족을 위한 안심 케어</h2>
+      <p>
+        행복 돌봄 서비스는 직접 돌보기 어려운 가족을 위해 전문 케어 인력이 방문하여 정성 어린 돌봄을 제공합니다.  
+        여러분의 소중한 가족이 언제나 건강하고 안전할 수 있도록 최선을 다합니다.
+      </p>
+    </section>
+    
+    <!-- 미션 및 비전 섹션 -->
+    <section class="section mission">
+      <h2>미션 &amp; 비전 – 믿음과 정성으로 지키는 가족의 행복</h2>
+      <p>
+        우리의 미션은 멀리 있거나 바쁜 일정으로 직접 케어하기 어려운 가족에게 안심과 사랑이 담긴 맞춤형 돌봄 서비스를 제공하는 것입니다.  
+        정성을 다해 가족의 건강과 안전을 지켜드립니다.
+      </p>
+    </section>
+    
+    <!-- 서비스 소개 섹션 -->
+    <section class="section services">
+      <h2>서비스 소개 – 가족을 위한 맞춤 케어 서비스</h2>
+      <p>행복 돌봄 서비스가 제공하는 주요 서비스는 다음과 같습니다.</p>
+      <ul>
+        <li>방문 마사지 및 건강 체크</li>
+        <li>필수 물품 정기 배달</li>
+        <li>온라인 예약 및 맞춤 상담</li>
+      </ul>
+      <p>
+        전문 인력이 직접 방문하여 사랑하는 가족의 상태를 꼼꼼히 확인하고, 필요한 케어를 제공함으로써 마음의 안정을 드립니다.
+      </p>
+    </section>
+  </div>
+
+  <script>
+    // 스크롤 페이드인 애니메이션 (mission, about, services, team)
+    const fadeTargets = document.querySelectorAll('.mission, .about, .services, .team');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.style.animation = 'fadeInUp 0.8s forwards';
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeTargets.forEach(t => io.observe(t));
+    
+    const styleEl = document.createElement('style');
+    styleEl.textContent = `
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    `;
+    document.head.appendChild(styleEl);
+  </script>
+</body>
+</html>

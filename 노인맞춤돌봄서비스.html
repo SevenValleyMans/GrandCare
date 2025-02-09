@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- [수정] 타이틀 보강 (남친대행·렌탈남친 키워드 추가) -->
+  <title>노인돌봄서비스 돌봄 서비스 | 행복돌봄서비스</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 가족이 멀리 있거나 바쁜 분들을 위한 안심 케어 서비스 -->
+  <meta name="description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta name="keywords" content="노인돌봄서비스, 돌봄 서비스, 노인맞춤돌봄서비스, 노인복지, 노인, 안심 케어, 가족 돌봄, 방문 마사지, 배달 서비스, 맞춤 케어, 행복 돌봄">
+      
+  <meta property="og:title" content="행복 돌봄 서비스 - 사랑하는 가족을 위한 안심 케어">
+  <meta property="og:description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta property="og:url" content="https://happycareservice.netlify.app/노인맞춤돌봄서비스">
+  <meta property="og:image" content="https://happycareservice.netlify.app/logo.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="행복 돌봄 서비스">
+      
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="행복 돌봄 서비스 - 사랑하는 가족을 위한 안심 케어">
+  <meta name="twitter:description" content="행복 돌봄 서비스는 노인돌봄서비스 전문 기관으로, 맞춤형 방문 케어를 제공합니다. 건강 체크, 필수 물품 배달, 전문 상담 서비스로 소중한 가족의 안전과 행복을 지켜드리는 노인맞춤돌봄서비스입니다.">
+  <meta name="twitter:image" content="https://happycareservice.netlify.app/logo.webp">
+      
+  <link rel="canonical" href="https://happycareservice.netlify.app/노인맞춤돌봄서비스">
+  <link rel="icon" type="image/webp" href="logo.webp">
+  <style>
+    :root {
+      --brand-color: #ffffff; /* 원하는 색상 (현재 흰색) */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth; /* 스크롤 애니메이션 */
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #dedac0; 
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 80px;
+      width: 80px;
+      margin-right: 5px; 
+    }
+    .text {
+      height: 80px;
+      width: 160px; 
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .nav-links a {
+      margin: 0 10px;
+      white-space: nowrap;
+      text-decoration: none;
+      color: white;
+      background-color: #5b4e4e;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: font-size 0.3s ease;
+    }
+    .nav-links a:hover {
+      font-size: 20px;
+    }
+    .spacer {
+      flex-grow: 1;
+    }
+    .googleLogin {
+      margin-left: 20px;
+    }
+    .googleLogin img {
+      width: 200px;
+      cursor: pointer;
+    }
+    /* 현재 페이지 a.active */
+    .nav-links a.active {
+      color: var(--brand-color)!important;
+      border-bottom: 2px solid var(--brand-color);
+      padding-bottom: 3px;
+    }
+
+    .content-hero {
+      height: 230px;
+      position: relative;
+      background: url(couple.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 70% 40%;
+      padding: 60px 20px 150px; 
+      text-align: center;
+      color: white;
+    }
+    .content-hero h1 {
+      position: absolute;
+      left: 90px;
+      top: 90px;
+      font-size: 5em;
+      margin-bottom: 10px;
+      animation: slide 2s;
+    }
+    .content-hero p {
+      position: absolute;
+      left: 90px;
+      top: 260px;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      animation: slide 2s;
+    }
+    @keyframes slide {
+      from {
+        left: -180px;
+        opacity: 0;
+      }
+      to {
+        left: 90px;
+        opacity: 1;
+      }
+    }
+
+    .content-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* [수정] 큰 화면에서는 3열, 중간 화면에서는 2열, 작은 화면에서는 1열 */
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 기본 3열 */
+      gap: 20px;
+    }
+    @media (max-width: 992px) {
+      .content-grid {
+        grid-template-columns: repeat(2, 1fr); /* 중간 사이즈 = 2열 */
+      }
+    }
+    @media (max-width: 576px) {
+      .content-grid {
+        grid-template-columns: 1fr; /* 모바일 = 1열 */
+      }
+    }
+    /* =============================================
+       모바일 최적화를 위한 미디어 쿼리
+       (768px 이하 화면일 때 적용)
+    ============================================= */
+    @media (max-width: 768px) {
+      /* 헤더 구조 조정 */
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      /* 로고 크기 축소 */
+      .header-left .logo,
+      .header-left .text {
+        width: 60px;
+        height: 60px;
+      }
+      /* 내비게이션 링크 크기/여백 조정 */
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .nav-links a {
+        margin: 5px;
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+    }
+    .content-item {
+      background-color: #f2f2f2;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    .content-item:hover {
+      transform: translateY(-5px);
+    }
+    .content-text {
+      padding: 15px;
+    }
+    .content-text h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.5em;
+      color: #1E1E1E;
+    }
+    .content-text p {
+      margin: 0;
+      font-size: 1em;
+      color: #666;
+    }
+
+    .extra-info {
+      display: none; 
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #444;
+    }
+    .read-more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #1E1E1E;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .read-more-btn:hover {
+      background-color: #333;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* [추가/보강] 모바일 최적화를 위한 미디어 쿼리 */
+    /* 이미 일부 media query가 있으므로, 폰트 사이즈/여백 등을 추가 조정 */
+    @media (max-width: 768px) {
+      .content-hero h1 {
+        font-size: 2em;
+      }
+      .content-hero p {
+        font-size: 1em;
+      }
+      /* 전체 패딩 약간 줄이기 */
+      .content-container {
+        margin: 20px auto;
+        padding: 0 10px;
+      }
+      .read-more-btn {
+        font-size: 0.85em;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 상단 헤더 -->
+  <header>
+    <div class="header-left">
+      <img class="logo" src="logo.webp" alt="Wolf Rent 로고" loading="lazy">
+      <img class="text" src="text.webp" alt="Wolf Rent 텍스트 로고" loading="lazy">
+      <nav class="nav-links">
+        <a href="index.html" class="button">홈</a>
+        <a href= "노인돌봄서비스.html" class="button">서비스 소개</a>
+        <a href="노인맞춤돌봄서비스.html" class="button active">컨텐츠</a>
+        <a href="노인복지.html" class="button">자주 묻는 질문</a>
+        <a href="돌봄서비스.html" class="button">이용후기</a>
+        <a href="counseling.html" class="button">문의하기</a>
+
+      </nav>
+    </div>
+    <div class="contact-info">
+      <a>📞 010-6620-4504</a>
+  </div>
+  </header>
+
+  <!-- 상단 배너 -->
+  <section class="content-hero">
+    <h1>컨텐츠</h1>
+    <p>다양한 컨텐츠를 즐겨보세요</p>
+  </section>
+
+  <div class="content-container">
+    <div class="content-grid">
+      <!-- 카드 1: alt 수정 -->
+      <div class="content-item">
+        <img src="drug.webp" width="100%" height="250" display="block alt" alt="울프렌트 남친대행 렌탈남친 컨텐츠 - 데이트 스타일 1" loading="lazy">
+        <div class="content-text">
+          <h2>생필품 및 약품 배달 서비스</h2>
+          <p>원하는 시간에 필요한 것을 배달해 드립니다.</p>
+          <div class="extra-info">
+            약국 제품, 생수, 밀키트 등 다양한 물건들을 정확한 시간에 맞게 정확한 장소에 배달해 드립니다.
+          </div>
+          <a href="#" class="read-more-btn">자세히 보기</a>
+        </div>
+      </div>
+
+      <!-- 카드 2: alt 수정 -->
+      <div class="content-item">
+        <img src="massage.webp" width="100%" height="250" display="block alt" alt="울프렌트 남친대행 렌탈남친 컨텐츠 - 데이트 스타일 2" loading="lazy">
+        <div class="content-text">
+          <h2>방문 마사지 서비스</h2>
+          <p>재활 마사지, 뭉치거나 결린 곳을 풀어드립니다.</p>
+          <div class="extra-info">
+            병원에서 제시한 재활 운동 및 마사지를 도와드리고 그 외에 평소에 뭉치는 부분과 결린 부분을 마사지를 통해 정성것 풀어드립니다.
+          </div>
+          <a href="#" class="read-more-btn">자세히 보기</a>
+        </div>
+      </div>
+
+      <!-- 카드 3: alt 수정 -->
+      <div class="content-item">
+        <img src="clean.webp" width="100%" height="250" display="block alt" alt="울프렌트 남친대행 렌탈남친 컨텐츠 - 데이트 팁 & 가이드" loading="lazy">
+        <div class="content-text">
+          <h2>청소 및 가사 서비스</h2>
+          <p>집안 청소, 세탁, 정리 등을 통해 노인들이 보다 편안하고 깨끗한 환경에서 지낼 수 있도록 돕습니다.</p>
+          <div class="extra-info">
+            집안 구석구석 먼지를 제거하고 세탁 및 정리정돈을 해드립니다. 그 외에 평소 몸이 불편해 하지 못한 집안일 대신 해드립니다.  
+          </div>
+          <a href="#" class="read-more-btn">자세히 보기</a>
+        </div>
+      </div>
+
+      <!-- 카드 4: alt 수정 -->
+      <div class="content-item">
+        <img src="park.webp" width="100%" height="250" display="block alt" alt="울프렌트 남친대행 렌탈남친 컨텐츠 - 패션 & 스타일" loading="lazy">
+        <div class="content-text">
+          <h2>운동 및 산책 서비스</h2>
+          <p>운동, 취미생활 같이 해드립니다.</p>
+          <div class="extra-info">
+            신체 건강을 위한 운동뿐만 아니라 거동이 불편하신 어르신에 취미를 같이 해드립니다.
+          </div>
+          <a href="#" class="read-more-btn">자세히 보기</a>
+        </div>
+      </div>
+
+      <!-- 카드 5: alt 수정 -->
+      <div class="content-item">
+        <img src="call.webp" width="100%" height="250" display="block alt" alt="울프렌트 남친대행 렌탈남친 컨텐츠 - 로맨틱 스팟 추천" loading="lazy">
+        <div class="content-text">
+          <h2>정기적인 안부전화 서비스</h2>
+          <p>원하는 간격, 원하는 시간대에 정기적인 안부전화.</p>
+          <div class="extra-info">
+            정기적인 안부전화 서비스를 통해 건강상태와 심리상태를 매번 체크하고 전화를 받지 않을 시 보호자분 동의를 통해 긴급출동 서비스를 지원해 드립니다.
+          </div>
+          <a href="#" class="read-more-btn">자세히 보기</a>
+        </div>
+      </div>
+
+      <!-- 카드 6: alt 수정 -->
+      <div class="content-item">
+        <img src="hospital.webp" width="100%" height="250" display="block alt" alt="울프렌트 남친대행 렌탈남친 컨텐츠 - 고민상담" loading="lazy">
+        <div class="content-text">
+          <h2>외출 동행 서비스</h2>
+          <p>병원 방문이나 외출을 원하는 노인에게 동행 서비스를 제공하여 안전한 외출을 돕습니다.</p>
+          <div class="extra-info">
+            매번 대중교통을 이용하기 번거롭고 규칙적인 일정이 있는 어르신을 위해 자차로 안전한 외출과 귀가를 돕습니다.
+          </div>
+          <a href="#" class="read-more-btn">자세히 보기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS: 스크롤 시 페이드인, 자세히 보기 toggle -->
+  <script>
+    // 1. 스크롤 시 .content-item들 페이드인
+    const items = document.querySelectorAll('.content-item');
+    const scrollObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.style.animation = 'fadeInUp 0.8s forwards';
+          scrollObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+    items.forEach(item => {
+      scrollObserver.observe(item);
+    });
+
+    // 2. "자세히 보기" 버튼 클릭 시 extra-info 토글
+    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+    readMoreBtns.forEach(btn => {
+      btn.addEventListener('click', (event) => {
+        event.preventDefault();
+        const extraInfo = btn.previousElementSibling; // 바로 앞 요소 .extra-info
+        if(extraInfo.style.display === 'block') {
+          extraInfo.style.display = 'none';
+          btn.textContent = '자세히 보기';
+        } else {
+          extraInfo.style.display = 'block';
+          btn.textContent = '접기';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

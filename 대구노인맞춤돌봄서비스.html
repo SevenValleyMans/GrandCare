@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ | 방문요양·노인돌봄서비스·돌봄서비스 자주 묻는 질문</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 가족이 멀리 있거나 바쁜 분들을 위한 안심 케어 서비스 -->
+  <meta name="description" content="행복돌봄서비스는 맞춤형 방문요양과 건강 체크, 물품 배달로 노인돌봄서비스을 제공합니다.">
+  <meta name="keywords" content="노인돌봄서비스, 돌봄 서비스, 노인맞춤돌봄서비스, 노인복지, 노인, 안심 케어, 가족 돌봄, 방문 마사지, 배달 서비스, 맞춤 케어, 행복 돌봄">
+      
+  <meta property="og:title" content="FAQ | 방문요양·노인맞춤서비스·돌봄서비스 자주 묻는 질문">
+  <meta property="og:description" content="행복돌봄서비스는 맞춤형 방문요양과 건강 체크, 물품 배달로 노인돌봄서비스을 제공합니다.">
+  <meta property="og:url" content="https://happycareservice.netlify.app/대구노인맞춤돌봄서비스">
+  <meta property="og:image" content="https://happycareservice.netlify.app/logo.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="행복 돌봄 서비스">
+      
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FAQ | 방문요양·노인맞춤서비스·돌봄서비스 자주 묻는 질문">
+  <meta name="twitter:description" content="행복돌봄서비스는 맞춤형 방문요양과 건강 체크, 물품 배달로 노인돌봄서비스을 제공합니다.">
+  <meta name="twitter:image" content="https://happycareservice.netlify.app/logo.webp">
+      
+  <link rel="canonical" href="https://happycareservice.netlify.app/대구노인맞춤돌봄서비스">
+  <link rel="icon" type="image/webp" href="logo.webp">
+  <style>
+    :root { --brand-color: #ffffff; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #dedac0;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 80px;
+      width: 80px;
+      margin-right: 5px;
+    }
+    .text {
+      height: 80px;
+      width: 160px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      background-color: #5b4e4e;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: font-size 0.3s ease;
+    }
+    .nav-links a:hover { font-size: 20px; }
+    .nav-links a.active {
+      color: var(--brand-color)!important;
+      border-bottom: 2px solid var(--brand-color);
+      padding-bottom: 3px;
+    }
+    .spacer { flex-grow: 1; }
+    .contact-info { font-size: 18px; font-weight: bold; color: #1E1E1E; }
+    .faq-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .faq-header h1 { margin: 0; font-size: 2em; }
+    .faq-container {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+    .faq-item {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+    .faq-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .faq-question {
+      padding: 15px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      position: relative;
+    }
+    .faq-question::after {
+      content: '\25BC';
+      position: absolute;
+      right: 20px;
+      transition: transform 0.3s ease;
+    }
+    .faq-item.active .faq-question::after {
+      transform: rotate(-180deg);
+    }
+    .faq-answer {
+      padding: 15px 20px;
+      display: none;
+      border-top: 1px solid #ddd;
+      background-color: #fafafa;
+    }
+    .faq-item.active .faq-answer { display: block; }
+    @media (max-width: 768px) {
+      .faq-header { flex-direction: column; margin: 20px 10px; text-align: center; }
+      .faq-header h1 { font-size: 1.6em; }
+      .faq-container { padding: 0 10px; }
+      .faq-question { font-size: 1em; padding: 12px 15px; }
+      .faq-answer { font-size: 0.95em; padding: 12px 15px; }
+      header { flex-direction: column; align-items: flex-start; }
+      .header-left { flex-direction: column; align-items: flex-start; }
+      .header-left .logo, .header-left .text { width: 60px; height: 60px; }
+      .nav-links { flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+      .nav-links a { margin: 5px; font-size: 14px; padding: 8px 12px; }
+    }
+    .footer-content {
+                text-align: center;
+                padding: 20px;
+            }
+            .footer-intro {
+                margin-top: 10px;
+                font-size: 14px;
+                color: #555;
+            }
+            .footer-email, .footer-hours {
+                color: #555;
+                margin: 5px 0;
+            }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img class="logo" src="logo.webp" alt="행복 돌봄서비스 로고" loading="lazy">
+      <img class="text" src="text.webp" alt="행복 돌봄서비스 텍스트 로고" loading="lazy">
+      <nav class="nav-links">
+        <a href="index.html" class="button">홈</a>
+        <a href="노인돌봄서비스.html" class="button">서비스 소개</a>
+        <a href="방문요양.html" class="button">컨텐츠</a>
+        <a href="대구노인맞춤돌봄서비스.html" class="button active">자주 묻는 질문</a>
+        <a href="대구노인돌봄서비스.html" class="button">이용 후기</a>
+        <a href="https://blog.naver.com/happy_care_service" class="button" target="_blank">블로그</a>
+      </nav>
+    </div>
+    <div class="spacer"></div>
+    <div class="contact-info"><a>📞 010-6620-4504</a></div>
+  </header>
+
+  <div class="faq-header">
+    <h1>자주 묻는 질문 (FAQ)</h1>
+  </div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">Q1. 서비스 이용 방법은 무엇인가요?</div>
+      <div class="faq-answer">
+        <p>A. 원하는 케어 서비스를 선택 후, 온라인 예약 양식을 작성해주시면 담당자가 연락드려 상세 상담 후 서비스를 진행합니다.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q2. 예약은 어떻게 진행되나요?</div>
+      <div class="faq-answer">
+        <p>A. 홈페이지의 우측 상단에 있는 전화번호로 전화 또는 문자, 혹은 이메일이나 디엠으로 상담 후 방문 일정을 조율합니다.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q3. 결제 방법은 어떤 방식이 가능한가요?</div>
+      <div class="faq-answer">
+        <p>A. 카드 결제 및 계좌이체를 기본으로 하며, 추가 결제 옵션은 고객센터를 통해 안내받으실 수 있습니다.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q4. 예약 취소 및 환불 규정은 어떻게 되나요?</div>
+      <div class="faq-answer">
+        <p>A. 예약 후 24시간 이내에는 무료 취소가 가능하며, 이후 취소 시 일부 환불 정책이 적용됩니다. 자세한 사항은 고객센터로 문의해 주세요.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q5. 서비스 제공 지역은 어디인가요?</div>
+      <div class="faq-answer">
+        <p>A. 현재 대구 및 인근 지역에서 서비스를 제공하며, 점진적으로 확대할 예정입니다.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q6. 문의는 어디로 해야 하나요?</div>
+      <div class="faq-answer">
+        <p>A. 전화(010-6620-4504) 또는 이메일(hermann8hesse@gmail.com)로 문의해 주시면 신속하게 답변드리겠습니다.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+        <p>&copy; 2025 행복 돌봄 서비스. All Rights Reserved.</p>
+        <div class="footer-intro">
+            대구 지역 노인돌봄서비스 – 방문요양과 돌봄서비스를 통해 가족의 부담을 덜어드립니다.
+        </div>
+        <!-- 전문 요양보호사 자격증 보유 문구 추가 -->
+        <div class="footer-certification" style="font-size: 14px; color: #555; margin-top: 5px;">
+            전문 요양보호사 자격증 보유
+        </div>
+        <div class="footer-email">이메일: hermann8hesse@gmail.com</div>
+        <div class="footer-hours">상담 가능 시간: 평일 06:00 ~ 23:00</div>
+        <div class="footer-instagram">인스타그램: @happy_care_service</div>
+    </div>  
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "행복 돌봄 서비스",
+          "image": "https://happycareservice.netlify.app/logo.webp",
+          "url": "https://happycareservice.netlify.app/",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "대구",
+            "addressRegion": "대구광역시",
+            "addressCountry": "KR"
+          },
+          "description": "대구에서 시행하는 노인 돌봄 서비스. 전문 요양보호사 자격증을 보유한 인력이 방문 마사지와 배달 서비스를 통해 노인 맞춤 돌봄을 제공하여 중년층의 부담을 덜어드립니다.",
+          "openingHours": ["Mo-Su 06:00-23:00"]
+        }
+    </script>
+</footer>   
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(question) {
+      question.addEventListener('click', function() {
+        this.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

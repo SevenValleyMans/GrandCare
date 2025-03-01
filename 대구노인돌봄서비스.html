@@ -19,7 +19,7 @@
   <meta name="twitter:title" content="이용후기 | 방문요양·노인맞춤서비스·돌봄서비스 - 행복돌봄서비스">
   <meta name="twitter:description" content="행복돌봄서비스는 맞춤형 방문요양과 건강 체크, 물품 배달로 노인돌봄서비스을 제공합니다.">
       
-  <link rel="canonical" href="https://happycareservice.netlify.app/대구노인돌봄서비스">
+  <link rel="canonical" href="https://happycareservice.netlify.app/대구노인인돌봄서비스">
   <link rel="icon" type="image/webp" href="logo.webp">
 
   <style>
@@ -149,8 +149,8 @@
       <nav class="nav-links">
         <a href="index.html" class="button">홈</a>
         <a href="노인돌봄서비스.html" class="button">서비스 소개</a>
-        <a href="대구시방문요양.html" class="button">컨텐츠</a>
-        <a href="대구노인맞춤돌봄서비스.html" class="button">자주묻는질문 (FAQ)</a>
+        <a href="방문요양.html" class="button">컨텐츠</a>
+        <a href="대구노인맞춤돌봄서비스.html" class="button">자주 묻는 질문</a>
         <a href="대구노인돌봄서비스.html" class="button active">이용 후기</a>
         <a href="https://blog.naver.com/happy_care_service" class="button" target="_blank">블로그</a>
       </nav>
@@ -178,7 +178,7 @@
         </div>
         <!-- 전문 요양보호사 자격증 보유 문구 추가 -->
         <div class="footer-certification" style="font-size: 14px; color: #555; margin-top: 5px;">
-          <strong>전문 요양보호사 자격증 보유</strong>
+            전문 요양보호사 자격증 보유
         </div>
         <div class="footer-email">이메일: hermann8hesse@gmail.com</div>
         <div class="footer-hours">상담 가능 시간: 평일 06:00 ~ 23:00</div>
@@ -201,6 +201,30 @@
           "openingHours": ["Mo-Su 06:00-23:00"]        }
     </script>
 </footer>
+<script>
+  // 개발자 도구(F12) 및 소스 보기(Ctrl+U) 차단
+  document.addEventListener("keydown", function(event) {
+      if (event.ctrlKey && (event.key === "u" || event.key === "U" || event.key === "s" || event.key === "S")) {
+          event.preventDefault();
+          alert("소스 코드 보기가 비활성화되었습니다.");
+      }
+      if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || (event.ctrlKey && event.shiftKey && event.key === "J")) {
+          event.preventDefault();
+          alert("개발자 도구 접근이 제한되었습니다.");
+      }
+  });
+
+  // 우클릭 차단
+  document.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+  });
+  //난독화
+  function getSecretKey() {
+      return "my-secret-key";
+  }
+  console.log(getSecretKey());
+
+</script>
 
 </body>
 </html>
